@@ -18,5 +18,5 @@ function calc() {
     var C = Number(document.getElementById('C').value);
     var F = Number(document.getElementById('F').value);
     var grade = new Grade(A, B, C, F);
-    document.getElementById('result').innerHTML = "Your GPA is " + grade.calcGPA();
+    alert("Your GPA is " + grade.calcGPA());
 }
