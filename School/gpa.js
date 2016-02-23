@@ -11,6 +11,7 @@ var Grade = (function () {
     };
     return Grade;
 }());
+
 function calc() {
     var A = Number(document.getElementById('A').value);
     var B = Number(document.getElementById('B').value);
