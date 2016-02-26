@@ -5,17 +5,18 @@
 	    <title>AOJ diff</title>
         <script type="text/javascript" src="diff.js">
         </script>
+        <link rel='stylesheet' type="text/css" href="diff.css">
     </head>
-    <body>
+    <body id='body' bgcolor="skyblue">
+        <h1>AOJ User Diff</h1>
         <form name="F" action="#">
             <div>
-                <p>User1: <input type="text" id="user1"></input></p>
+                <p>User1: <input type="text" id="user1" maxlength='15'></input></p>
             </div>
             <div>
-                <p>User2: <input type="text" id="user2"></input></p>
+                <p>User2: <input type="text" id="user2" maxlength='15'></input></p>
             </div>
-            <input type="submit" value="submit" onclick="diffProbs()">
-            <input type="reset" value="reset">
+            <p><input id='button' type="submit" value="diff" onclick="diff_probs()"> &nbsp; <input id='button' type="reset" value="reset"></p>
         </form>
         <div id="result"></div>
     </body>
