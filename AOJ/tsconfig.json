@@ -31,7 +31,6 @@
     "!./typings/**/*.ts"
   ],
   "files": [
-    "./b.ts",
     "./diff.ts"
   ],
   "atom": {

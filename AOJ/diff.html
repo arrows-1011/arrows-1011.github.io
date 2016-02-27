@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
 	    <meta charset="utf8">
 	    <title>AOJ diff</title>
-        <script type="text/javascript" src="diff.js">
-        </script>
+        <?php
+        require "diff.php";
+        ?>
         <link rel='stylesheet' type="text/css" href="diff.css">
     </head>
     <body id='body' bgcolor="skyblue">
         <h1>AOJ User Diff</h1>
-        <form name="F" action="#">
+        <form action="diff.php" method="post">
             <div>
-                <p>User1: <input type="text" id="user1" maxlength='15'></input></p>
+                <p>User1: <input type="text" name="user1" maxlength='15' /></p>
             </div>
             <div>
-                <p>User2: <input type="text" id="user2" maxlength='15'></input></p>
+                <p>User2: <input type="text" name="user2" maxlength='15' /></p>
             </div>
-            <p><input id='button' type="submit" value="diff" onclick="diff_probs()"> &nbsp; <input id='button' type="reset" value="reset"></p>
+            <p><input type="submit" value="diff" /> &nbsp; <input id='button' type="reset" value="reset" /></p>
         </form>
-        <div id="result"></div>
     </body>
 </html>
