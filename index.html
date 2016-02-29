@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html>
     <head>
-	    <meta charset="utf8">
-	    <title>arrows's field</title>
-        <link rel="short icon" href="arrow.jpg">
-        <style type="text/css">
-    	    <!-- h1 { text-align: center; font-size: 60 } -->
-    	</style>
+	<meta charset="utf8">
+	<link rel="short icon" href="arrow.jpg">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>arrows's field</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<style type="text/css">
+	    #info { font-size: 25px; }
+	</style>
     </head>
     <body>
-        <h1 id="title">arrows's field</h1>
-	    <p>~ただいま準備中~</p>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nv">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="">arrows's field</a>
+		</div>
+
+		<div class="navbar-collapse collapse" id="nv">
+        	    <ul class="nav navbar-nav">
+        	    	<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+	            	<li><a href="#profile" data-toggle="tab">Profile</a></li>
+    	      	    </ul>
+    		</div>
+	    </div>
+	</nav>
+	<div id="body" class="container">
+	    <div class="tab-content">
+		<div class="active tab-pane" id="home">
+		    <br><br><br>
+		    <h1>Welcome come on!</h1>
+		</div>
+		<div class="tab-pane" id="profile">
+		    <br><br><br>
+		    <h1>Profile</h1>
+		    <ul>
+			<li>
+			    <h2>Name</h2>
+			    <p id="info">arrows</p>
+			</li>
+			<li>
+			    <h2>Affiliation</h2>
+			    <p id="info">University of Aizu</p>
+			</li>
+			<li>
+			    <h2>Achievement</h2>
+			    <h3>~2013~</h3>
+			    <p id="info">ICPC国内予選 89位</p>
+			    <br>
+			    <h3>~2014~</h3>
+			    <p id="info">ICPC国内予選 33位</p>
+			    <p id="info">ICPC台湾大会</p>
+			    <p id="info">Code Formula 本選 76位</p>
+			    <p id="info">CODE FESTIVAL 本戦 156位</p>
+			    <br>
+			    <h3>~2015~</h3>
+			    <p id="info">ICPC国内予選 31位</p>
+			    <p id="info">ICPCシンガポール大会</p>
+			    <p id="info">CODE FESTIVAL 決勝 185位</p>
+			    <p id="info">CODE RUNNER 決勝 50位</p>
+			    <br>
+			    <h3>~2016</h3>
+			    <p id="info">DDPC 本選 80位</p>
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	</div>
     </body>
 </html>
